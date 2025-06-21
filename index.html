@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greedy Snake - Shawn X. Dong</title>
+    <meta name="description" content="Classic Greedy Snake game. Use arrow keys or WASD to control the snake and eat the red food to grow!">
+    <link rel="canonical" href="https://shawnxd.github.io/greedy_snake/">
+    <meta property="og:url" content="https://shawnxd.github.io/greedy_snake/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Greedy Snake">
+    <meta property="og:description" content="Classic Greedy Snake game. Use arrow keys or WASD to control the snake and eat the red food to grow!">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>🐍 Greedy Snake</h1>
+            <div class="game-stats">
+                <div class="stat">
+                    <span class="stat-label">Length:</span>
+                    <span id="length" class="stat-value">1</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Alive:</span>
+                    <span id="alive" class="stat-value">True</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="game-area">
+            <canvas id="gameCanvas" width="600" height="700"></canvas>
+            <div id="gameOver" class="game-over hidden">
+                <div class="game-over-content">
+                    <h2>Game Over!</h2>
+                    <p>Final Length: <span id="finalLength">1</span></p>
+                    <button id="playAgain" class="play-again-btn">Play Again</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-controls">
+            <h3>How to Play</h3>
+            <p>Use <strong>Arrow Keys</strong> or <strong>WASD</strong> to control the snake</p>
+            <p>Eat the red food to grow longer</p>
+            <p>Don't hit the walls or yourself!</p>
+        </div>
+
+        <footer class="game-footer">
+            <p>By <a href="https://github.com/shawnxd">Shawn X. Dong</a> | 
+               <a href="https://github.com/shawnxd/greedy_snake">View Source</a></p>
+        </footer>
+    </div>
+
+    <script src="./assets/game.js"></script>
+</body>
+</html> 
